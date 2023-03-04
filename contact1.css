@@ -1,0 +1,213 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100%;
+    width: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: wheat;
+
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    position: absolute;
+   height: 11vw;
+   overflow: hidden;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   color: white;
+   padding: 0% 10% 10% 0;
+   
+  
+    
+}
+nav ul{
+position: relative;
+display: flex;
+
+}
+
+.link li{
+    float: left;
+    align-items: center;
+    justify-content:center ;
+    list-style: none;
+    
+    
+}
+
+.link a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem;
+   
+       
+}
+
+.logo img{
+    display: flex;
+    margin-top: 0;
+    height: 34%;
+    width: 38%;
+}
+
+.link li a:hover{
+    background-color: green;
+    text-transform: uppercase;
+}
+.contain-all{
+    min-height: 100%;
+    
+      
+  }
+
+ 
+  .bck1 img{
+    display: flex;
+  mix-blend-mode: overlay;
+    height: 85vw;
+    width: 90%;
+    margin-top: 0; 
+    margin-left: 5vw;
+    margin-right: 30vw;  
+    position: absolute; 
+} 
+  
+  .main{
+      overflow: auto;
+      padding-bottom: 100px;
+  }
+
+  
+ .hd1 h2{
+   margin-left: 23vw;
+   margin-right: 23vw;
+    margin-top: 15vw;
+    color: wheat;
+    position: relative;
+    -webkit-text-stroke: 0.3vw wheat;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+  }
+
+   .hd1 h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: green;
+    -webkit-text-stroke: 0vw   gold;
+    border-right: 2px solid  wheat;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+  }
+
+  @keyframes animate{
+    0%, 10%, 100%
+    {
+        width: 0;
+    }
+    70%, 90%{
+        width: 95%;
+    }
+  }
+
+  form{
+    margin-top: 10vw;
+    margin-left: 40vw;
+    position:relative;
+  
+    
+
+  }
+
+ 
+
+  form input{
+    width: 50vw;
+    height: 4vw;
+    border-radius: 10px ;
+    border:3px solid black ;
+    padding: 5px;
+    background-color: wheat;
+    
+  }
+
+
+ .text-input{
+    height: 30vw;
+    width: 50vw;
+    background-color: wheat;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5px;
+
+ } 
+
+ .btn{
+    border: 2px solid gold;
+    width: 8vw;
+    height: 3vw;
+    background-color: green;
+    padding: 5px;
+    border-radius: 6px;
+    margin-left: 22vw;
+
+ }
+
+ .bck2 img{
+    display: flex;
+   position:absolute;
+   height: 60vw;
+   width: 35vw;
+   margin-top: -8vw;
+ }
+
+ .contact{
+    margin-top: 10% ;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 50vw;
+
+ }
+
+ hr{
+    width: 50vw;
+    margin-left: -10vw;
+    margin-right: auto;
+    display: flex;
+    border: 3px solid green;
+}
+
+.contact a{
+    color: green;
+   text-decoration: none;
+}
+
+.contact h3{
+    margin-left: 10vw;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contact p{
+    margin-left: 6vw;
+    font-weight: 400;
+    font-size: 16px;
+}
